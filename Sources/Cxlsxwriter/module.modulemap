@@ -1,5 +1,5 @@
 module Cxlsxwriter [system] {
-  header "C:/vcpkg/packages/libxlsxwriter_x64-windows/debug/lib/include/xlsxwriter.h"
+  header "C:/vcpkg/packages/libxlsxwriter_x64-windows/lib/include/xlsxwriter.h"
   link "xlsxwriter"
   export *
 }
