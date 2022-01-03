@@ -1,1 +1,1 @@
-#include "C:/vcpkg/installed/x86-windows/include/xlsxwriter.h"
+#include "C:/vcpkg/installed/x64-windows/include/xlsxwriter.h"
