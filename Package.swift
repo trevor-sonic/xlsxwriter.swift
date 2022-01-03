@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "xlsxwriter.swift",
-  products: [.library(name: "xlsxwriter", targets: ["xlsxwriter"])],
+  products: [.library(name: "xlsxwriter", type: .dynamic, targets: ["xlsxwriter"])],
   targets: [
     .systemLibrary(name: "Cxlsxwriter", pkgConfig: "xlsxwriter"),
     .target(name: "xlsxwriter", dependencies: ["Cxlsxwriter"]),
