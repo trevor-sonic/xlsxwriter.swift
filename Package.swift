@@ -7,7 +7,7 @@ let package = Package(
   name: "xlsxwriter.swift",
   products: [.library(name: "xlsxwriter", targets: ["xlsxwriter"])],
   targets: [
-    .systemLibrary(name: "Cxlsxwriter", pkgConfig: "xlsxwriter"),
+    .systemLibrary(name: "Cxlsxwriter", pkgConfig: "xlsxwriter", providers: [.brew(["libxlsxwriter"])]),
     .target(name: "xlsxwriter", dependencies: ["Cxlsxwriter"]),
     .testTarget(name: "xlsxwriterTests", dependencies: ["xlsxwriter"]),
   ])
